@@ -1,0 +1,10 @@
+<h1 align="center">Productos</h1>
+
+<div class="row">
+    <div class="col">
+        <productos-add-producto (onNewProducto)="onNewProducto($event)"></productos-add-producto>
+    </div>
+    <div class="col">
+        <productos-list [productosList]="productos"></productos-list>
+    </div>
+</div>

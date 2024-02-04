@@ -1,0 +1,32 @@
+<h4>Agregar producto</h4>
+
+<form class="row" (ngSubmit)="emitProducto()">
+
+  <input
+    type="text"  
+    [(ngModel)]="producto.id"  
+    name="codigo"
+    class="form-control mb-2"
+    placeholder="Codigo">
+
+  <input
+    type="text"    
+    name="nombre"
+    [(ngModel)]="producto.name"  
+    class="form-control mb-2"
+    placeholder="Nombre">
+
+    <input
+    type="number"    
+    name="valor"
+    [(ngModel)]="producto.valor"  
+    class="form-control mb-2"
+    placeholder="Valor">
+
+  <button type="submit" class="btn btn-primary">
+    Agregar
+  </button>
+
+  <pre>{{ producto | json }}</pre>
+
+</form>
